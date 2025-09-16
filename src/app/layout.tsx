@@ -1,5 +1,4 @@
 import type { Metadata } from "next";
-import { ThemeModeScript } from 'flowbite-react';
 import "./globals.css";
 
 
@@ -16,7 +15,7 @@ export default function RootLayout({
   return (
     <html suppressHydrationWarning lang="en">
         <head>
-            <ThemeModeScript />
+          
            <link rel="icon" href="./favicon.ico" />
             {/* Google Font */}
            <link rel="preconnect" href="https://fonts.googleapis.com"/>
