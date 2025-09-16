@@ -2,18 +2,27 @@ import React from 'react'
 import Image from "next/image";
 const Carouselbg = () => {
   return (
-<div id="default-carousel" className="relative w-full " data-carousel="slide">
+<div id="default-carousel" className="relative w-full h-[100vh]  " data-carousel="slide">
     {/* <!-- Carousel wrapper --> */}
-    <div className="relative h-full overflow-hidden rounded-lg md:h-96">
+    <div className="relative h-full w-full ">
         {/* <!-- Item 1 --> */}
-        <div className=" duration-700 ease-in-out" data-carousel-item>
-            <Image src="https://res.cloudinary.com/dnfahcxo3/image/upload/v1757993943/temple-angkor-wat-cambodia_dzbwhv.jpg" width={100} height={100} className="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="..." />
+        <div className="duration-700 w-full h-full ease-in-out" data-carousel-item>
+            <Image
+                src="https://res.cloudinary.com/dnfahcxo3/image/upload/v1757993954/boy-with-academic-hat_cy6thm.jpg"
+                alt="..."
+                fill
+                style={{ objectFit: "cover" }}
+            />
         </div>
         {/* <!-- Item 2 --> */}
-        <div className=" duration-700 ease-in-out" data-carousel-item>
-            <Image src="https://res.cloudinary.com/dnfahcxo3/image/upload/v1757993931/boy-pretends-be-superhero-is-playing-as-astronaut-draw-concept_1_fgryah.jpg" width={100} height={100} className="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="..." />
+        <div className="duration-700 w-full h-full ease-in-out" data-carousel-item>
+            <Image
+                src="https://res.cloudinary.com/dnfahcxo3/image/upload/v1757993924/girl-toy-plane_teoom5.jpg"
+                alt="..."
+                fill
+                style={{ objectFit: "cover" }}
+            />
         </div>
-     
     </div>
     {/* <!-- Slider indicators --> */}
     <div className="absolute z-30 flex -translate-x-1/2 bottom-5 left-1/2 space-x-3 rtl:space-x-reverse">
