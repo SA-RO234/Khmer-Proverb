@@ -16,7 +16,7 @@ export default function RootLayout({
     <html suppressHydrationWarning lang="en">
         <head>
           
-           <link rel="icon" href="./favicon.ico" />
+           <link rel="icon" href="/favicon.ico" />
             {/* Google Font */}
            <link rel="preconnect" href="https://fonts.googleapis.com"/>
            <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />

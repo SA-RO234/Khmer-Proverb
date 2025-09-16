@@ -1,45 +1,29 @@
+
+"use client";
 import React from 'react'
+import { Swiper, SwiperSlide } from 'swiper/react';
+import Image from 'next/image';
+import { Navigation, Pagination, Scrollbar, A11y } from 'swiper/modules';
+import 'swiper/css';
+import 'swiper/css/navigation';
+import 'swiper/css/pagination';
+import 'swiper/css/scrollbar';
+
 
 const Carouselbg = () => {
   return (
-<div
-  id="carouselExampleSlidesOnly"
-  className="relative"
-  data-twe-carousel-init
-  data-twe-ride="carousel">
-  {/* <!--Carousel items--> */}
-  <div
-    className="relative w-full overflow-hidden after:clear-both after:block after:content-['']">
-    {/* <!--First item--> */}
-    <div
-      className="relative float-left -mr-[100%] w-full transition-transform duration-[600ms] ease-in-out motion-reduce:transition-none"
-      data-twe-carousel-item
-      data-twe-carousel-active>
-      <img
-        src="https://mdbcdn.b-cdn.net/img/new/slides/041.webp"
-        className="block w-full"
-        alt="Wild Landscape" />
-    </div>
-    {/* <!--Second item--> */}
-    <div
-      className="relative float-left -mr-[100%] hidden w-full transition-transform duration-[600ms] ease-in-out motion-reduce:transition-none"
-      data-twe-carousel-item>
-      <img
-        src="https://mdbcdn.b-cdn.net/img/new/slides/042.webp"
-        className="block w-full"
-        alt="Camera" />
-    </div>
-    {/* <!--Third item--> */}
-    <div
-      className="relative float-left -mr-[100%] hidden w-full transition-transform duration-[600ms] ease-in-out motion-reduce:transition-none"
-      data-twe-carousel-item>
-      <img
-        src="https://mdbcdn.b-cdn.net/img/new/slides/043.webp"
-        className="block w-full"
-        alt="Exotic Fruits" />
-    </div>
-  </div>
-</div>
+        <Swiper
+        modules={[Navigation, Pagination, Scrollbar, A11y]}
+     
+        navigation
+
+      spaceBetween={50}
+      slidesPerView={1}
+    
+    >
+      <SwiperSlide> 
+        <Image className='w-full h-full'  alt='' src="https://res.cloudinary.com/dnfahcxo3/image/upload/v1757993943/temple-angkor-wat-cambodia_dzbwhv.jpg" fill /> </SwiperSlide>
+    </Swiper>
   )
 }
 
