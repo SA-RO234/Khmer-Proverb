@@ -11,7 +11,7 @@ import 'swiper/css/scrollbar';
 
 const Carouselbg = () => {
   return (
-       <div className='w-full h-[100vh]'>
+       <div className='w-full h-full'>
         <Swiper
         modules={[Navigation,Autoplay, Pagination, Scrollbar, A11y]}
         autoplay={{delay : 2000 ,stopOnLastSlide : false}}
