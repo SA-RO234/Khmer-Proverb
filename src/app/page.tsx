@@ -1,10 +1,16 @@
-import Image from "next/image";
+
+import React from "react";
+import Carouselbg from "@/components/carousel-bg";
 
 export default function Home() {
   return (
-    <div className="font-sans grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20">
-    
-
+    <div>
+      <div className="background-wrapper fixed inset-0">
+          <Carouselbg/>
+      </div>
+      <div className="main-container w-[80%] mx-auto mt-10">
+         <h1 className="proverb-title text-center text-5xl font-bold">ព្យញ្ជនៈ ៣៣​​ តួ</h1>
+       </div>
     </div>
   );
 }
