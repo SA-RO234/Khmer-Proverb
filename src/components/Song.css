@@ -1,0 +1,8 @@
+.songBtn{
+     animation: song 1.5s infinite linear;
+}
+@keyframes song{
+     to{
+        transform: rotate(360deg);
+     }
+}
