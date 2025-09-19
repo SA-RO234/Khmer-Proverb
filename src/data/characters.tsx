@@ -1,5 +1,6 @@
-const characters = [
-    {
+const characters = {
+     proverb : [ 
+        {
         id: 1,
         char : "ក",
         proverb : "កុំស្លាប់ឱ្យឃើញសព ស្លាប់ឱ្យឃើញកេរ្តិ៍ឈ្មោះ",
@@ -263,7 +264,151 @@ const characters = [
          sound : "",
          color : "#DC2222"
     },
-];
+],
+   Pond : [
+   {
+      id : 1,
+      char : "ា",
+        sound : "",
+          color : "#5178BD",
+   },
+   {
+      id : 2,
+      char  : "ិ",
+        sound : "",
+          color : "#5178BD",
+   },
+   {
+      id : 3,
+        sound : "",
+          color : "#5178BD",
+      char  : "ី"
+   },
+   {
+      id : 4,
+      char  : "ឹ",
+        color : "#5178BD",
+        sound : "",
+   },
+   {
+      id : 5,
+      char  : "ឺ",
+        color : "#5178BD",
+        sound : "",
+   },
+   {
+      id : 6,
+      char  : "ុ",
+        color : "#5178BD",
+        sound : "",
+   },
+   {
+      id : 7,
+      char : "ូ",
+        color : "#5178BD",
+        sound : "",
+   },
+   {
+      id : 8,
+      char : "ួ",
+        color : "#5178BD",
+        sound : "",
+   },
+   {
+      id : 9,
+      char  : "ើ",
+        color : "#5178BD",
+        sound : "",
+   },
+   {
+      id : 10,
+      char  : "ឿ",
+        color : "#5178BD",
+        sound : "",
+   },
+   {
+      id : 11,
+      char  : "ៀ",
+        color : "#5178BD",
+        sound : "",
+   },
+   {
+      id : 12,
+      char  : "េ",
+        color : "#5178BD",
+        sound : "",
+   },
+   {
+      id : 13,
+      char : "ែ",
+        color : "#5178BD",
+        sound : "",
+   },
+   {
+      id : 14,
+      char : "ៃ",
+        color : "#5178BD",
+        sound : "",
+   },
+   {
+      id : 15,
+      char : "ោ",
+        color : "#5178BD",
+        sound : "",
+   },
+   {
+      id : 16,
+      char : "ៅ",
+        color : "#5178BD",
+        sound : "",
+   },
+   {
+      id : 17,
+      char : "ុំ",
+        color : "#5178BD",
+        sound : "",
+   },
+   {
+      id : 18,
+      char : "ំ",
+        color : "#5178BD",
+        sound : "",
+   },
+   {
+      id : 19,
+      char  : "ាំ",
+        color : "#5178BD",
+        sound : "",
+   },
+   {
+      id : 20,
+      char : "ះ",
+        color : "#5178BD",
+        sound : "",
+   },
+   {
+      id : 21,
+      char : "ុះ",
+        color : "#5178BD",
+        sound : "",
+   },
+   {
+      id : 22,
+      char : "េះ",
+      color : "#5178BD",
+        sound : "",
+   },
+   {
+      id : 23,
+      char : "ោះ",
+        color : "#5178BD",
+        sound : ""
+
+   },
+]  
+};
+
+
  
 
 

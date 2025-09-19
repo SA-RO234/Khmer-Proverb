@@ -1,0 +1,14 @@
+.quite{
+    clip-path: polygon(27% 0, 100% 0%, 75% 100%, 0% 100%);
+    
+}
+
+.infinitScroll{
+     animation: scroll 10s infinite linear;
+}
+
+@keyframes scroll{
+     to {
+         transform: translateX(-50%);
+     }
+}
