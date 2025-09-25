@@ -22,6 +22,7 @@ export default function RootLayout({
           <link rel="preconnect" href="https://fonts.googleapis.com"/>
           <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
           <link href="https://fonts.googleapis.com/css2?family=Bayon&family=Fira+Code:wght@300..700&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Moul&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Outfit:wght@100..900&family=Preahvihear&family=Rubik:ital,wght@0,300..900;1,300..900&family=Siemreap&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&family=TASA+Explorer:wght@400..800&family=TASA+Orbiter:wght@400..800&display=swap" rel="stylesheet"/>
+         
           </head>
       <body>
         {children}

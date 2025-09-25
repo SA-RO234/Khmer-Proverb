@@ -1,27 +1,26 @@
+"use client";
 import characters from '@/data/characters';
-import React from "react";
+import React, { useState } from "react";
 import Carouselbg from "@/components/carousel-bg";
 import ProverbContent from "@/components/Proverb-Content";
 import Song from "@/components/Song";
 import InfinitScroll from '@/components/ui/InfinitScroll';
+import DetailVerb from '@/components/DetailVerb';
 
 export default function Home() {
+  const [selectedChar , setSelectedChar] = useState<string | null >(null);
   return (
     <>
     <Song/>
-    <div className="flex  justify-center  h-full  w-full items-start py-20">
+    <div className="flex   justify-center  h-full  w-full items-start py-20">
       <InfinitScroll/>
       <div className="background-wrapper w-full h-full after:content-['']  after:block after:bg-gray-700/50 after:absolute after:w-full after:h-full fixed z-[-1] inset-0">
           <Carouselbg/>
       </div>
-      <div className="main-container flex flex-wrap justify-between  items-start  rounded-[30px] p-20 bg-gray-700/50  w-[90%] mx-auto ">
-           <div className="w-[35%]">
-             <ProverbContent title="ព្យញ្ជនះ ៣៣​​ តួ" Data={characters.proverb} />
-           </div>
-           <div className="line w-[2px] h-[700px] bg-gray-700/70"></div>
-           <div className="w-[35%] ">
-                <ProverbContent title="ស្រះ​​ ២៣ តួ" Data={characters.Pond} />
-           </div>
+      <div className="main-container  md:flex-row gap-20 md:gap-0 flex-col flex flex-wrap justify-between  items-start  rounded-[30px] md:p-20 p-5 bg-transparent md:bg-gray-700/50  w-full md:w-[90%] mx-auto ">
+             <ProverbContent onSelectChar={setSelectedChar} title="ព្យញ្ជនះ ៣៣​​ តួ" Data={characters.proverb} />
+           <div className="line w-[2px] hidden md:block h-[700px] bg-gray-700/70"></div>
+              <DetailVerb selectedChar={selectedChar} />
        </div>
     </div>
       </>

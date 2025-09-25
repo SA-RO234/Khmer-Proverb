@@ -3,265 +3,265 @@ const characters = {
         {
         id: 1,
         char : "ក",
-        proverb : "កុំស្លាប់ឱ្យឃើញសព ស្លាប់ឱ្យឃើញកេរ្តិ៍ឈ្មោះ",
-        sound : "",
-        verbType : "",
+        advice : "កុំបង្អង់ពេលវេលា ពេលវេលាដែលបាត់ទៅ មិនអាចយកត្រឡប់បានទេ",
+        sound : "../../sounds/kh-1.wav",
+        excemple : "ក្លាហាន",
         color : "#DC2222"
     },
       {
         id: 2,
         char : "ខ",
-        proverb : "",
-         verbType : "",
-         sound : "",
+        advice : "ខំរស់ដោយមានគោលបំណង នឹងមិនងាយរំខានដោយរឿងតូចតាច",
+          excemple : "ខិតខំ",
+          sound : "../../sounds/kh-2.wav",
           color : "#DC2222"
     },
       {
         id: 3,
         char : "គ",
-         verbType : "",
-        proverb : "",
+         excemple : "គំនិតច្នៃប្រឌិត",
+        advice : "គួរតែអនុវត្តអ្វីតិចៗរៀងរាល់ថ្ងៃ ដើម្បីឲ្យក្លាយជាធំ",
         color : "#FAC91A",
-         sound : ""
+         sound : "../../sounds/kh-3.wav"
     },
       {
         id: 4,
         char : "ឃ",
-         verbType : "",
-        proverb : "",
+         excemple : "ឃ្លាត",
+        advice : "ឃ្លាតពីការខ្ជិល ព្រោះវាគឺជាឧបសគ្គធំបំផុតនៃជោគជ័យ",
          color : "#FAC91A",
-         sound : ""
+         sound : "../../sounds/kh-4.wav"
     },
       {
         id: 5,
         char : "ង",
-         verbType : "",
-        proverb : "",
+         excemple : "ងងឹត",
+        advice : "ងងឹតមិនអាចរំខានដល់ពន្លឺបានទេ",
          color : "#FAC91A",
-         sound : ""
+         sound : "../../sounds/kh-5.wav"
     },
       {
         id: 6,
         char : "ច",
-         verbType : "",
-        proverb : "",
+        excemple : "ចិត្តមាំមួន",
+         advice: "ចេះអត់ធ្មត់ នឹងឈ្នះគ្រប់ការលំបាក",
          color : "#DC2222",
-         sound : ""
+         sound : "../../sounds/kh-6.wav"
     },
       {
         id: 7,
         char : "ឆ",
         color : "#DC2222",
-         verbType : "",
-        proverb : "",
-         sound : ""
+         excemple : "ឆ្លាតវៃ",
+         advice : "ឆ្លាតវៃគឺជាឧបករណ៍ដ៏ល្អបំផុត សម្រាប់ជោគជ័យ",
+         sound : "../../sounds/kh-7.wav"
     },
       {
         id: 8,
         char : "ជ",
-        proverb : "",
-         verbType : "",
+        advice : "ជឿជាក់លើខ្លួនឯង គឺជាគន្លឹះដ៏សំខាន់បំផុតនៃជោគជ័យ",
+         excemple : "ជោគជ័យ",
           color : "#FAC91A",
-         sound : ""
+         sound : "../../sounds/kh-8.wav"
     },
       {
         id: 9,
         char : "ឈ",
-        proverb : "",
-         sound : "",
+        excemple : "ឈ្នះ",
+         sound : "../../sounds/kh-9.wav",
           color : "#FAC91A",
-          verbType : "",
+          advice : "ឈ្នះដោយសុចរិត គឺជាការគោរពខ្លួនឯង និងគោរពអ្នកដទៃ",
     },
       {
         id: 10,
         char : "ញ",
-        proverb : "",
+        excemple : "ញញឹម",
          color : "#FAC91A",
-         sound : "",
-          verbType : "",
+         sound : "../../sounds/kh-10.wav",
+          advice : "ញញឹមសប្បាយ ជួយឲ្យមានសុខភាពល្អ និងជួយបង្កើនអារម្មណ៍វិជ្ជមាន",
     },
       {
         id: 11,
         char : "ដ",
-         verbType : "",
-        proverb : "",
+       excemple : "ដំណើរ",
+       advice: "ដំណើរទៅរកជោគជ័យ គឺចាប់ផ្តើមពីជំហានតូចៗ",
         color : "#DC2222",
-         sound : ""
+         sound : "../../sounds/kh-11.wav"
     },
       {
         id: 12,
         char : "ឋ",
-         verbType : "",
-        proverb : "",
+         excemple : "ឋានៈ",
+        advice : "ឋានៈមិនមែនជារឿងសំខាន់បំផុតទេ តែការគោរពខ្លួនឯង និងគោរពអ្នកដទៃ គឺសំខាន់ជាង",
         color : "#DC2222",
-         sound : ""
+         sound : "../../sounds/kh-12.wav"
     },
       {
         id: 13,
         char : "ឌ",
-        proverb : "",
-         verbType : "",
+        advice : "ឌីជីថលគឺជាឧបករណ៍ដ៏មានប្រយោជន៍ សម្រាប់ការស្វែងរកចំណេះដឹង និងការទំនាក់ទំនង",
+         excemple: "ឌីជីថល",
           color : "#FAC91A",
-         sound : ""
+         sound : "../../sounds/kh-13.wav"
     },
       {
         id: 14,
         char : "ឍ",
-        proverb : "",
-         verbType : "",
-          color : "#FAC91A",
-         sound : ""
+        advice : "ឍីបនៃចិត្ត គឺជាឧបករណ៍ដ៏មានតម្លៃសម្រាប់ការគិតពិចារណា និងការសម្រេចចិត្ត",
+        excemple : "ឍីប",
+         color : "#FAC91A",
+         sound : "../../sounds/kh-14.wav"
     },
       {
         id: 15,
         char : "ណ",
-        proverb : "",
+        advice : "ណែនាំខ្លួនឯងឲ្យទៅរកគោលបំណង និងសុភមង្គល",
         color : "#DC2222",
-         verbType : "",
-         sound : ""
+         excemple : "ណែនាំ",
+         sound : "../../sounds/kh-15.wav"
     },
       {
         id: 16,
         char : "ត",
-        proverb : "",
+        advice : "ត្រូវមានការគោរពខ្លួនឯង និងគោរពអ្នកដទៃ ដើម្បីបង្កើតសង្គមដែលសុខសាន្ត",
         color : "#DC2222",
-         sound : "",
-          verbType : "",
+         sound : "../../sounds/kh-16.wav",
+        excemple: "តម្លៃ",
     },
       {
         id: 17,
-        char : "ឋ",
-        proverb : "",
-         verbType : "",
+        char : "ថ",
+        advice : "ថែរក្សាសុខភាព និងចិត្តវិជ្ជមាន ដើម្បីរស់នៅយូរអង្វែង",
+         excemple: "ថែរក្សា",
          color : "#DC2222",
-         sound : ""
+         sound : "../../sounds/kh-17.wav"
     },
       {
         id: 18,
-         verbType : "",
+         advice : "ទឹកចិត្តជួយឲ្យមានកម្លាំងក្នុងការប្រឈមមុខនឹងអ្វីៗ",
         char : "ទ",
          color : "#FAC91A",
-        proverb : "ទឹកជ្រៅមិនលេចពពុះ",
-         sound : ""
+        excemple : "ទឹក",
+         sound : "../../sounds/kh-18.wav"
     },
       {
         id: 19,
         char : "ធ",
-         verbType : "",
+         excemple : "ធនធាន",
          color : "#FAC91A",
-        proverb : "",
-         sound : ""
+        advice : "ធ្វើការអោយខ្លាំង ដើម្បីសម្រេចបានគោលបំណង",
+         sound : "../../sounds/kh-19.wav"
     },
       {
         id: 20,
         char : "ន",
-         verbType : "",
-        proverb : "",
+        excemple : "នឹកស្រមៃ",
+        advice : "នឹកស្រមៃអ្វីដែលល្អៗ សម្រាប់ជីវិត",
          color : "#FAC91A",
-         sound : ""
+         sound : "../../sounds/kh-20.wav"
     },
       {
         id: 21,
         char : "ប",
-         verbType : "",
+         excemple : "ប្តូរ",
          color : "#DC2222",
-        proverb : "បើគ្មានទឹកមិនមានត្រី",
-         sound : ""
+        advice : "បើកចិត្តទទួលយកការផ្លាស់ប្តូរ ដើម្បីអភិវឌ្ឍន៍ខ្លួនឯង",
+         sound : "../../sounds/kh-21.wav"
     },
       {
         id: 22,
         char : "ផ",
-         verbType : "",
+         excemple : "ផ្លូវ",
          color : "#DC2222",
-        proverb : "",
-         sound : ""
+        advice : "ផ្តើមដំណើរទៅរកគោលបំណង ដោយជំហានតូចៗ",
+         sound : "../../sounds/kh-22.wav"
     },
       {
         id: 23,
         char : "ព",
-         verbType : "",
+         excemple : "ព្យាយាម",
           color : "#FAC91A",
-        proverb : "",
-         sound : ""
+        advice : "ព្យាយាមមិនឲ្យចាញ់ គឺជាគន្លឹះដ៏សំខាន់នៃជោគជ័យ",
+         sound : "../../sounds/kh-23.wav"
     },
       {
         id: 24,
         char : "ភ",
-         verbType : "",
-        proverb : "",
+         excemple : "ភ្លេច",
+        advice : "ភ្លេចពីអតីតកាលដើម្បីផ្តោតលើបច្ចុប្បន្ន និងអនាគត",
          color : "#FAC91A",
-         sound : ""
+         sound : "../../sounds/kh-24.wav"
     },
       {
         id: 25,
         char : "ម",
-        proverb : "",
+        advice : "មនុស្សគួរតែមានការគោរពខ្លួនឯង និងគោរពអ្នកដទៃ",
          color : "#FAC91A",
-         verbType : "",
-         sound : ""
+         excemple : "មនុស្ស",
+         sound : "../../sounds/kh-25.wav"
     },
       {
         id: 26,
         char : "យ",
-        proverb : "",
-         verbType : "",
+        advice : "យកចិត្តទុកដាក់លើអ្វីដែលអ្នកធ្វើ ដើម្បីឲ្យបានល្អបំផុត",
+         excemple : "យកចិត្តទុកដាក់",
          color : "#FAC91A",
-         sound : ""
+         sound : "../../sounds/kh-26.wav"
     },
       {
         id: 27,
         char : "រ",
-         verbType : "",
-        proverb : "",
+        excemple : "រៀន",
+        advice : "រៀនពីកំហុសរបស់ខ្លួន ដើម្បីកែលម្អខ្លួនឯង",
          color : "#FAC91A",
-         sound : ""
+         sound : "../../sounds/kh-27.wav"
     },
       {
         id: 28,
         char : "ល",
-         verbType : "",
+         excemple : "លទ្ធផល",
          color : "#FAC91A",
-        proverb : "",
-         sound : ""
+        advice : "លទ្ធផលនៃការខំប្រឹងប្រែង គឺជារឿងដែលមានតម្លៃបំផុត",
+         sound : "../../sounds/kh-28.wav"
     },
       {
         id: 29,
         char : "វ",
-        proverb : "",
+        advice : "វិន័យនាំឱ្យមានភាពជោគជ័យ",
          color : "#FAC91A",
-         verbType : "",
-         sound : ""
+        excemple : "វិន័យ",
+         sound : "../../sounds/kh-29.wav"
     },
       {
         id: 30,
         char : "ស",
         color : "#DC2222",
-         verbType : "",
-        proverb : "ស្មោះត្រង់នាំឱ្យបានជោគជ័យ",
-         sound : ""
+         excemple : "ស្មោះត្រង់",
+        advice : "ស្មោះត្រង់ជាមួយខ្លួនឯង និងអ្នកដទៃ គឺជាគន្លឹះដ៏សំខាន់នៃជោគជ័យ",
+         sound : "../../sounds/kh-30.wav"
     },
       {
         id: 31,
         char : "ហ",
-         verbType : "",
-        proverb : "",
+         advice : "ហ៊ានធ្វើអ្វីដែលអ្នកចង់ធ្វើ",
+        excemple : "ហ៊ាន",
         color : "#DC2222",
-         sound : ""
+         sound : "../../sounds/kh-31.wav"
     },
       {
         id: 32,
         char : "ឡ",
-         verbType : "",
+         advice : "ឡើងពីការបរាជ័យ ដើម្បីទៅរកជោគជ័យ",
          color : "#DC2222",
-        proverb : "",
-         sound : ""
+        excemple : "ឡើង",
+         sound : "../../sounds/kh-32.wav"
     },
       {
         id: 33,
         char : "អ",
-         verbType : "",
-        proverb : "",
-         sound : "",
+         advice : "អនុវត្តអ្វីដែលអ្នកបានរៀន ដើម្បីកែលម្អខ្លួនឯង",
+        excemple : "អនុវត្ត",
+         sound : "../../sounds/kh-33.wav",
          color : "#DC2222"
     },
 ],

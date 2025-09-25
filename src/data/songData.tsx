@@ -1,13 +1,7 @@
-
 const SongData =  [
-     {
-        id : 1,
-        song : "./public/Song/កខគ.mp3"
-     },
-      {
-        id : 2,
-        song : "./public/Song/សារិកាកែវអើយ.mp3"
-     }
-]
+    "https://res.cloudinary.com/dnfahcxo3/video/upload/v1758334148/%E1%9E%87%E1%9E%B8%E1%9E%8F%E1%9E%B6%E1%9E%81%E1%9F%92%E1%9E%89%E1%9E%BB%E1%9F%86%E1%9E%98%E1%9E%B6%E1%9E%93%E1%9E%95%E1%9F%92%E1%9E%91%E1%9F%87%E1%9E%AF%E1%9E%9F%E1%9F%92%E1%9E%9A%E1%9F%82_E_I_E_I_O_-_Old_MacDonald_He_has_a_farm___-_Khmer_Alphabet_TV_1080p_h264_c6ysvo.mp4" ,
+    "https://res.cloudinary.com/dnfahcxo3/video/upload/v1758334557/%E1%9E%91%E1%9E%93%E1%9F%92%E1%9E%9F%E1%9F%84%E1%9E%84%E1%9E%82%E1%9F%84%E1%9E%96%E1%9F%92%E1%9E%9A%E1%9F%83_%E1%9E%9F%E1%9E%B7%E1%9E%80%E1%9F%92%E1%9E%9F%E1%9E%B6%E1%9E%9F%E1%9E%84%E1%9F%92%E1%9E%82%E1%9E%98%E1%9E%90%E1%9F%92%E1%9E%93%E1%9E%B6%E1%9E%80%E1%9F%8B%E1%9E%91%E1%9E%B8%E1%9F%A5_%E1%9E%9F%E1%9E%BB%E1%9E%9A%E1%9E%B7%E1%9E%99%E1%9E%B6%E1%9E%9B%E1%9F%92%E1%9E%84%E1%9E%B6%E1%9E%85%E1%9E%90%E1%9F%92%E1%9E%84%E1%9F%83_Khmer_Alphabet_TV_-_Khmer_Alphabet_TV_144p_h264_xgjii0.mp4" ,
+    "https://res.cloudinary.com/dnfahcxo3/video/upload/v1758334141/YakKidTV_%E1%9E%9F%E1%9E%B6%E1%9E%9A%E1%9E%B7%E1%9E%80%E1%9E%B6%E1%9E%80%E1%9F%82%E1%9E%9C%E1%9E%A2%E1%9E%BE%E1%9E%99_Sarika_Keo_%E1%9E%9F%E1%9E%BB%E1%9E%B8%E1%9E%A2%E1%9E%B8%E1%9E%80%E1%9E%84%E1%9F%97_%E1%9E%99%E1%9E%80%E1%9F%92%E1%9E%9FTV_-_YakkidTV_720p_h264_t3263s.mp4" ,
+];
 
 export default SongData;
