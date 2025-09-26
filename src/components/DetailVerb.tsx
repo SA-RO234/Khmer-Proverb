@@ -1,8 +1,11 @@
 "use client"
 import React, { useEffect, useRef, useState } from 'react'
 import "./DetailVerb.css";
-
-const DetailVerb = ({selectedChar , Otherelement}: {selectedChar: any | null , Otherelement : any}) => {
+type DetailVerbProps = {
+  selectedChar: any | null;
+  Otherelement: React.ReactNode;
+};
+const DetailVerb = ({selectedChar , Otherelement}: DetailVerbProps) => {
   const audioRef = useRef<HTMLAudioElement>(null);
   const [isClient, setIsClient] = useState(false);
 

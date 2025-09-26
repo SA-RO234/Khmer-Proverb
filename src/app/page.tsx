@@ -3,7 +3,6 @@ import characters from '@/data/characters';
 import React, { useState } from "react";
 import Carouselbg from "@/components/carousel-bg";
 import ProverbContent from "@/components/Proverb-Content";
-import Song from "@/components/Song";
 import InfinitScroll from '@/components/ui/InfinitScroll';
 import DetailVerb from '@/components/DetailVerb';
 import Menu from '@/components/Menu';

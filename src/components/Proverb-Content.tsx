@@ -1,8 +1,20 @@
 "use client"
 import { imageConfigDefault } from 'next/dist/shared/lib/image-config';
 import { Button } from './ui/button';
+type Character = {
+  id: number;
+  char: string;
+  sound: string;
+  color: string;
+};
 
-const ProverbContent = ({title , Data , onSelectChar} : {title:string , Data: any , onSelectChar : (char: string)=> void}) => {
+type ProverbContentProps = {
+  Data: Character[];
+  onSelectChar: (char: string) => void;
+  title: string;
+};
+
+const ProverbContent = ({title , Data , onSelectChar} : ProverbContentProps) => {
   return (
     <div className="md:w-[35%] w-full">
      <h1 className="proverb-title text-orange-700  text-center pb-20 text-4xl md:text-7xl md:text-white font-bold">{title}</h1>
