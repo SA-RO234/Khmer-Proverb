@@ -1,4 +1,3 @@
-
 "use client";
 import React from 'react'
 import { Swiper, SwiperSlide } from 'swiper/react';
@@ -22,16 +21,28 @@ const Carouselbg = () => {
       className='w-full h-full'
     >
       <SwiperSlide> 
-        <Image className='w-full h-full object-cover' fill  alt='' src="https://res.cloudinary.com/dnfahcxo3/image/upload/v1757993930/boy-showed-his-muscle-strength_rresoy.jpg" /> 
+        <Image
+          priority={true} // <-- Set priority for the first image
+          className='w-full h-full object-cover'
+          fill
+          alt=''
+          src="https://res.cloudinary.com/dnfahcxo3/image/upload/v1757993930/boy-showed-his-muscle-strength_rresoy.jpg"
+        /> 
+      </SwiperSlide>
+      <SwiperSlide> 
+        <Image
+          priority={false}
+          className='w-full h-full object-cover'
+          fill
+          alt=''
+          src="https://res.cloudinary.com/dnfahcxo3/image/upload/v1757993931/boy-pretends-be-superhero-is-playing-as-astronaut-draw-concept_1_fgryah.jpg"
+        /> 
       </SwiperSlide>
        <SwiperSlide> 
-        <Image className='w-full h-full object-cover' fill  alt='' src="https://res.cloudinary.com/dnfahcxo3/image/upload/v1757993931/boy-pretends-be-superhero-is-playing-as-astronaut-draw-concept_1_fgryah.jpg" /> 
+        <Image priority={true} className='w-full h-full object-cover' fill  alt='' src="https://res.cloudinary.com/dnfahcxo3/image/upload/v1757993924/girl-toy-plane_teoom5.jpg" /> 
       </SwiperSlide>
        <SwiperSlide> 
-        <Image className='w-full h-full object-cover' fill  alt='' src="https://res.cloudinary.com/dnfahcxo3/image/upload/v1757993924/girl-toy-plane_teoom5.jpg" /> 
-      </SwiperSlide>
-       <SwiperSlide> 
-        <Image className='w-full h-full object-cover' fill  alt='' src="https://res.cloudinary.com/dnfahcxo3/image/upload/v1757993926/boy-dream_gtl8sj.jpg" /> 
+        <Image priority={true} className='w-full h-full object-cover' fill  alt='' src="https://res.cloudinary.com/dnfahcxo3/image/upload/v1757993926/boy-dream_gtl8sj.jpg" /> 
       </SwiperSlide>
     </Swiper>
     </div>

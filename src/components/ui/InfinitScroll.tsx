@@ -1,22 +1,35 @@
 import React from 'react'
 import "./InfinitScroll.css";
 import Quote from '@/data/Quote';
+import { motion } from 'framer-motion';
 
 const InfinitScroll = () => {
+    const gap = 24;
+    const itemWidth = 1100 + gap;
+   const totalWidth =  Quote.length * itemWidth;
+   const quoteLoop = [...Quote , ...Quote];
   return (
-    <div className='absolute w-full h-[50px] overflow-hidden top-2 left-0 border-y' >
-          <div className='w-full infinitScroll h-full flex items-center justify-start'>
-              {
-                   Quote.map((item , idx)=>(
-                          <div key={idx}
-                           style={{width : item.width , maxWidth: item.width , minWidth : item.width}}
-                           className={` h-full quite pl-6 flex justify-center items-center`}>
-                            <p className='text-gray-500/100'>🧒 {item.title} 🧒</p>
-                        </div>
-                   ))
-              }
-          </div>
-      </div>
+   <div className="absolute bg-gray-700/50 w-[90%] left-[80px] flex justify-center items-center top-3   h-[60px] z-3 overflow-hidden">
+          <motion.div
+            className="flex"
+            style={{ width : totalWidth * 2}}
+            animate={{ x: [-totalWidth, 0] }}
+            transition={{
+              x: {
+                repeat: Infinity,
+                repeatType: 'loop',
+                duration:30,
+                ease: 'linear',
+              },
+            }}
+          >
+            {quoteLoop.map((item, index) => (
+                <div key={index}  className='w-[1100px] flex justify-center items-center'>
+               <h1 className='text-white text-3xl font-bold'>{item.title}</h1>
+               </div>
+            ))}
+          </motion.div>
+        </div>
   )
 }
 

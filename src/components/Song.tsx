@@ -1,11 +1,10 @@
 "use client";
 import { Music , Play ,SkipBack ,SkipForward } from 'lucide-react'
-import React, { useEffect, useRef, useState } from 'react'
+import React, { useState } from 'react'
 import "./Song.css";
 import clsx from 'clsx';
 import useSound  from 'use-sound';
 import SongData from '@/data/songData';
-
 
 const Song = () => {
     const [currentSong , setCurrentSong] = useState<number>(0);
@@ -18,18 +17,10 @@ const Song = () => {
        interrupt: true
     });
 
-      useEffect(()=>{
-        if(isPlaying){
-           play();
-        }
-      },[currentSong]);
-
    const togglePlay = ()=>{
      if(isPlaying){
       controls.stop();
-      setIsPlaying(false);
      }else{
-      controls.stop();
       play();
      }
      setIsPlaying(!isPlaying);
@@ -39,11 +30,13 @@ const Song = () => {
      controls.stop();
      setCurrentSong((prev)=> (prev+1) % SongData.length);
      setTimeout(() => play(), 0);
+     setIsPlaying(true);
    }
    const songPrev = ()=>{
      controls.stop();
      setCurrentSong((prev)=> (prev-1 + SongData.length) % SongData.length);
      setTimeout(() => play(), 0);
+     setIsPlaying(true);
    }
 
   return (
