@@ -10,6 +10,10 @@
  font-family: "Siemreap", sans-serif;
 }
 
+.proverb-title{
+   font-family: var(--font-moul);
+}
+
 @theme inline {
   --radius-sm: calc(var(--radius) - 4px);
   --radius-md: calc(var(--radius) - 2px);

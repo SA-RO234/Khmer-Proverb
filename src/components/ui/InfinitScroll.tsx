@@ -25,7 +25,7 @@ const InfinitScroll = () => {
           >
             {quoteLoop.map((item, index) => (
                 <div key={index}  className='w-[1100px] flex justify-center items-center'>
-               <h1 className='text-white text-3xl font-bold'>{item.title}</h1>
+               <h1 className='text-white infinitTitle text-2xl font-bold'>{item.title}</h1>
                </div>
             ))}
           </motion.div>

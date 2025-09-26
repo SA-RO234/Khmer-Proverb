@@ -19,7 +19,7 @@ export default function Home() {
         <div className="background-wrapper w-full h-full after:content-[''] after:block after:bg-gray-700/50 after:absolute after:w-full after:h-full fixed z-[0] inset-0">
           <Carouselbg />
         </div>
-        <div className="main-container absolute h-auto z-10 md:flex-row gap-20 md:gap-0 flex-col flex flex-wrap justify-between items-start md:p-20 p-5 bg-transparent md:bg-gray-700/50 w-full md:w-[90%] mx-auto ">
+        <div className="main-container absolute h-auto z-10 md:flex-row gap-20 md:gap-0 flex-col flex flex-wrap justify-between items-start md:p-20 p-2 sm:p-5 bg-transparent md:bg-gray-700/50 w-full md:w-[90%] mx-auto ">
           <ProverbContent onSelectChar={setSelectedChar} title="ព្យញ្ជនះ ៣៣​​ តួ" Data={characters.proverb} />
           <div className="line w-[2px] hidden md:block h-[700px] bg-gray-700/70"></div>
           <DetailVerb
