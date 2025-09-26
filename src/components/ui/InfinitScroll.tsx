@@ -9,7 +9,7 @@ const InfinitScroll = () => {
    const totalWidth =  Quote.length * itemWidth;
    const quoteLoop = [...Quote , ...Quote];
   return (
-   <div className="absolute bg-gray-700/50 w-[90%] left-[80px] flex justify-center items-center top-3   h-[60px] z-3 overflow-hidden">
+   <div className="absolute bg-gray-700/50 w-full md:w-[90%] left-0 md:left-[80px] flex justify-center items-center top-3   h-[60px] z-3 overflow-hidden">
           <motion.div
             className="flex"
             style={{ width : totalWidth * 2}}

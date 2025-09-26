@@ -6,12 +6,13 @@ import ProverbContent from "@/components/Proverb-Content";
 import Song from "@/components/Song";
 import InfinitScroll from '@/components/ui/InfinitScroll';
 import DetailVerb from '@/components/DetailVerb';
+import Menu from '@/components/Menu';
 
 export default function Home() {
   const [selectedChar , setSelectedChar] = useState<string | null >(null);
   return (
     <>
-    <Song/>
+    <Menu />
     <div className="flex  justify-center  h-full  w-full items-start py-20">
       <InfinitScroll/>
       <div className="background-wrapper w-full h-full after:content-['']  after:block after:bg-gray-700/50 after:absolute after:w-full after:h-full fixed z-[-1] inset-0">
