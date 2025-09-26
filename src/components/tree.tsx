@@ -49,25 +49,28 @@ function Tree<T = unknown>({
   const mergedProps = { ...props, ...containerProps }
 
   const { style: propStyle, ...otherProps } = mergedProps
-
-  const mergedStyle = {
-     ...props,
+interface TreeStyles extends React.CSSProperties {
+  "--tree-indent"?: string; // explicitly type your custom property
+}
+ const mergedStyle: { style: TreeStyles } = {
+  ...props,
   ...containerProps,
   style: {
     ...(containerProps?.style ?? {}),
-    ["--tree-indent" as any]: `${indent}px`,
-  } as React.CSSProperties,
-  }
+    "--tree-indent": `${indent}px`, // now typed as string
+  },
+};
 
   return (
-   <TreeContext.Provider value={{ indent, tree: tree as TreeInstance<unknown> }}>
+  <TreeContext.Provider value={{ indent, tree: tree as TreeInstance<unknown> }}>
   <div
     data-slot="tree"
-    style={mergedStyle}
+    style={mergedStyle.style}  // <-- pass the inner style object
     className={cn("flex flex-col", className)}
     {...otherProps}
   />
 </TreeContext.Provider>
+
 
   )
 }
