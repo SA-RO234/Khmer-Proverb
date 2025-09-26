@@ -11,7 +11,7 @@ import AllSlide from '@/data/AllSlide';
 
 const Carouselbg = () => {
   return (
-       <div className='w-full h-full'>
+       <div className='w-full  h-full'>
         <Swiper
         modules={[Navigation,Autoplay, Pagination, Scrollbar, A11y]}
         autoplay={{delay : 2000 ,stopOnLastSlide : false}}
@@ -28,7 +28,7 @@ const Carouselbg = () => {
               priority={item.priority} // <-- Set priority for the first image
               className='w-full h-full object-cover'
               fill
-              alt=''
+              alt='item img'
               src={item.img}
             /> 
           </SwiperSlide>

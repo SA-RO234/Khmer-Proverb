@@ -7,31 +7,31 @@ import { Slot } from "radix-ui"
 
 import { cn } from "@/lib/utils"
 
-interface TreeContextValue<T = any> {
+interface TreeContextValue<T = unknown> {
   indent: number
   currentItem?: ItemInstance<T>
-  tree?: any
+  tree?: unknown
 }
 
-const TreeContext = React.createContext<TreeContextValue>({
+const TreeContext = React.createContext<TreeContextValue<any>>({
   indent: 20,
   currentItem: undefined,
   tree: undefined,
 })
 
-function useTreeContext<T = any>() {
+function useTreeContext<T = unknown>() {
   return React.useContext(TreeContext) as TreeContextValue<T>
 }
 
 interface TreeProps extends React.HTMLAttributes<HTMLDivElement> {
   indent?: number
-  tree?: any
+  tree?: unknown
 }
 
-function Tree({ indent = 20, tree, className, ...props }: TreeProps) {
+function Tree<T = unknown>({ indent = 20, tree, className, ...props }: TreeProps) {
   const containerProps =
-    tree && typeof tree.getContainerProps === "function"
-      ? tree.getContainerProps()
+    tree && typeof (tree as any).getContainerProps === "function"
+      ? (tree as { getContainerProps: () => object }).getContainerProps()
       : {}
   const mergedProps = { ...props, ...containerProps }
 
@@ -56,14 +56,14 @@ function Tree({ indent = 20, tree, className, ...props }: TreeProps) {
   )
 }
 
-interface TreeItemProps<T = any>
+interface TreeItemProps<T = unknown>
   extends React.HTMLAttributes<HTMLButtonElement> {
   item: ItemInstance<T>
   indent?: number
   asChild?: boolean
 }
 
-function TreeItem<T = any>({
+function TreeItem<T = unknown>({
   item,
   className,
   asChild,
@@ -129,12 +129,12 @@ function TreeItem<T = any>({
   )
 }
 
-interface TreeItemLabelProps<T = any>
+interface TreeItemLabelProps<T = unknown>
   extends React.HTMLAttributes<HTMLSpanElement> {
   item?: ItemInstance<T>
 }
 
-function TreeItemLabel<T = any>({
+function TreeItemLabel<T = unknown>({
   item: propItem,
   children,
   className,
@@ -172,14 +172,17 @@ function TreeDragLine({
 }: React.HTMLAttributes<HTMLDivElement>) {
   const { tree } = useTreeContext()
 
-  if (!tree || typeof tree.getDragLineStyle !== "function") {
+  if (
+    !tree ||
+    typeof (tree as { getDragLineStyle?: () => React.CSSProperties }).getDragLineStyle !== "function"
+  ) {
     console.warn(
       "TreeDragLine: No tree provided via context or tree does not have getDragLineStyle method"
     )
     return null
   }
 
-  const dragLine = tree.getDragLineStyle()
+  const dragLine = (tree as { getDragLineStyle: () => React.CSSProperties }).getDragLineStyle()
   return (
     <div
       style={dragLine}

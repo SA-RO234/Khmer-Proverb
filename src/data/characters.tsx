@@ -1,4 +1,9 @@
-const characters = {
+import { SelectedCharType } from "@/lib/DetailType";
+
+const characters : {
+  proverb: SelectedCharType[];
+  Pond: SelectedCharType[];
+} = {
      proverb : [ 
         {
         id: 1,
