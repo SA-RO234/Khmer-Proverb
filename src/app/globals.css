@@ -7,7 +7,7 @@
 
 *{
   @apply select-none;
- font-family: "Siemreap", sans-serif;
+ /* font-family: "Siemreap", sans-serif; */
 }
 
 .proverb-title{
@@ -51,6 +51,12 @@
   --color-sidebar-border: var(--sidebar-border);
   --color-sidebar-ring: var(--sidebar-ring);
   --font-moul :"Moul", serif;
+  --font-luckiest :"Luckiest Guy", cursive;
+  --font-righteous :"Righteous", sans-serif;
+  /*  All color  */
+  --color-yellow: #ffd100;
+  --color-green: #71f58f;
+  --color-pink : #f668a2;
 }
 
 :root {

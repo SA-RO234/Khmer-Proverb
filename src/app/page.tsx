@@ -1,39 +1,24 @@
-"use client";
-import characters from '@/data/characters';
-import React, { useState } from "react";
-import Carouselbg from "@/components/carousel-bg";
-import ProverbContent from "@/components/Proverb-Content";
-import InfinitScroll from '@/components/ui/InfinitScroll';
-import DetailVerb from '@/components/DetailVerb';
- import { SelectedCharType } from '@/lib/DetailType';
-import Menu from '@/components/Menu';
+import Category_Container from "@/components/homepage/Category_Container";
+import { Search , Plus } from "lucide-react";
+
 
 export default function Home() {
-  const [selectedChar, setSelectedChar] = useState<SelectedCharType  | null>(null);
-
   return (
-    <>
-      <Menu />
-      <div className="flex justify-center  h-[300vh] border w-full items-start py-20">
-        <InfinitScroll />
-        <div className="background-wrapper w-full h-full after:content-[''] after:block after:bg-gray-700/50 after:absolute after:w-full after:h-full fixed z-[0] inset-0">
-          <Carouselbg />
+   <div className="w-full h-auto bg-yellow">
+         <div className="lg:w-[65%] w-full sm:w-full px-5 md:px-0 sm:px-5 mx-auto pt-10 h-full">
+           <h1 className="logo-name pb-5 font-luckiest text-pink text-5xl text-center sm:text-center md:text-start font-[800]">Krousar</h1>
+           <div className="flex mb-10 relative items-center border-0 h-[50px] rounded-4xl w-full sm:w-full md:w-[300px]">
+             <input placeholder="Find a Task You want do..." type="text" className="w-full  caret-pink font-bold text-sm text-pink placeholder:text-pink/50 px-5 placeholder:h-full focus:outline-3 outline-offset-2 focus:outline-pink bg-black/90 border-0 rounded-2xl h-full " name="" id="" />
+              <Search className="absolute text-pink  right-5 " />
+           </div>
+             <Category_Container/>
+                <Category_Container/>
+                   <Category_Container/>
         </div>
-        <div className="main-container absolute h-auto z-10 md:flex-row gap-20 md:gap-0 flex-col flex flex-wrap justify-between items-start md:p-20 p-2 sm:p-5 bg-transparent md:bg-gray-700/50 w-full md:w-[90%] mx-auto ">
-          <ProverbContent onSelectChar={setSelectedChar} title="ព្យញ្ជនះ ៣៣​​ តួ" Data={characters.proverb} />
-          <div className="line w-[2px] hidden md:block h-[700px] bg-gray-700/70"></div>
-          <DetailVerb
-            Otherelement={
-              <ProverbContent
-                Data={characters.Pond}
-                onSelectChar={setSelectedChar}
-                title="ស្រះ ២៣ តួ"
-              />
-            }
-            selectedChar={selectedChar}
-          />
-        </div>
-      </div>
-    </>
+        <footer className="w-[65%] mx-auto pt-10 pb-40 text-center">
+            <h1 className="text-8xl text-pink/50  font-bold font-righteous">Thank you for using <span className="font-luckiest font-light text-pink text-8xl"> krousar </span></h1>
+            <h1 className="text-7xl font-bold text-pink/50  font-righteous">Build by-<a className="underline text-pink" href="#">Sun Rosa</a></h1>
+        </footer>
+   </div>
   );
 }
